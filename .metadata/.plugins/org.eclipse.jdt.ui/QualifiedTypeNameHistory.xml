@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
+    <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+    <fullyQualifiedTypeName name="caseStudy.UserMicroservice.entity.UserDetails"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetailsService"/>
+    <fullyQualifiedTypeName name="caseStudy.UserMicroservice.dao.AdminRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetails"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UsernameNotFoundException"/>
+    <fullyQualifiedTypeName name="caseStudy.UserMicroservice.entity.AdminDetails"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.User"/>
+    <fullyQualifiedTypeName name="caseStudy.searchMicroservices.entity.UserDetails"/>
+    <fullyQualifiedTypeName name="caseStudy.searchMicroservices.service.AdminServiceImpl"/>
+    <fullyQualifiedTypeName name="caseStudy.searchMicroservices.dao.UserRepository"/>
+</qualifiedTypeNameHistroy>
