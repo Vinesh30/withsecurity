@@ -20,7 +20,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import caseStudy.searchMicroservices.dao.AdminRepository;
 import caseStudy.searchMicroservices.entity.TrainDetails;
-import caseStudy.searchMicroservices.service.AdminService;
+import caseStudy.searchMicroservices.service.UserService;
 
 
 @RunWith(SpringRunner.class)
@@ -28,7 +28,7 @@ import caseStudy.searchMicroservices.service.AdminService;
 public class UserMicroServiceApplicationTests 
 {
 	@Autowired
-	private AdminService adminService;
+	private UserService adminService;
 	
 	@MockBean
 	private AdminRepository adminRepository;

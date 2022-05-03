@@ -18,16 +18,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 import caseStudy.UserMicroservice.entity.AdminDetails;
 import caseStudy.UserMicroservice.entity.TrainDetails;
-import caseStudy.UserMicroservice.service.UserService;
+import caseStudy.UserMicroservice.service.AdminService;
 import io.swagger.annotations.ApiOperation;
 
-@CrossOrigin("*") 
+//@CrossOrigin("*") 
 @RestController 
-@RequestMapping("/admin") 
+@RequestMapping("/admin/Access") 
 public class AdminController {
 
 	@Autowired
-	private UserService userService;
+	private AdminService userService;
 
 	// This method finds the all Trains
 	@GetMapping("/findAll") 

@@ -5,10 +5,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "adminSignUpDetails")
 public class AdminDetails {
-	@Id
+	
 	private String name;
 	private String emailId;
 	private Long contact;
+	@Id
 	private String adminname;
 	private String password;
 	private String confirmpassword;

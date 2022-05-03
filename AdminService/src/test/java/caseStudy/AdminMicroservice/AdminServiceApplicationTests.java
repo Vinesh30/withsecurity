@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import caseStudy.UserMicroservice.dao.FareRepository;
 import caseStudy.UserMicroservice.entity.TrainDetails;
-import caseStudy.UserMicroservice.service.UserServiceImpl;
+import caseStudy.UserMicroservice.service.AdminServiceImpl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -27,7 +27,7 @@ import static org.mockito.Mockito.when;
 public class AdminServiceApplicationTests {
 
 	@Autowired
-	private UserServiceImpl userService;
+	private AdminServiceImpl userService;
 
 	@MockBean
 	private FareRepository fareRepo;
