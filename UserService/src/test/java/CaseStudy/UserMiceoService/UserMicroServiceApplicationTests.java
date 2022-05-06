@@ -18,8 +18,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import caseStudy.searchMicroservices.dao.AdminRepository;
-import caseStudy.searchMicroservices.entity.TrainDetails;
+import caseStudy.searchMicroservices.models.TrainDetails;
+import caseStudy.searchMicroservices.repo.AdminRepository;
 import caseStudy.searchMicroservices.service.UserService;
 
 

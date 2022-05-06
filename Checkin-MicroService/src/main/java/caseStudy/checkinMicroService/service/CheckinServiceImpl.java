@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import caseStudy.checkinMicroService.dao.CheckinRepository;
-import caseStudy.checkinMicroService.entity.CheckinDetails;
+import caseStudy.checkinMicroService.models.CheckinDetails;
+import caseStudy.checkinMicroService.repo.CheckinRepository;
 
 @Service
 public class CheckinServiceImpl implements CheckinService {

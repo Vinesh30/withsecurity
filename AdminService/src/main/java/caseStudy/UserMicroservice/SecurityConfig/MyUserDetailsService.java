@@ -9,8 +9,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import caseStudy.UserMicroservice.dao.AdminRepository;
-import caseStudy.UserMicroservice.entity.AdminDetails;
+import caseStudy.UserMicroservice.models.AdminDetails;
+import caseStudy.UserMicroservice.repo.AdminRepository;
 
 @Service
 public class MyUserDetailsService implements UserDetailsService {

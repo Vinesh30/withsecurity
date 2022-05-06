@@ -9,8 +9,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import caseStudy.searchMicroservices.dao.UserRepository;
-import caseStudy.searchMicroservices.entity.UserDetailsmodel;
+import caseStudy.searchMicroservices.models.UserDetailsmodel;
+import caseStudy.searchMicroservices.repo.UserRepository;
 
 
 

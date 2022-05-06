@@ -12,8 +12,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import caseStudy.UserMicroservice.dao.FareRepository;
-import caseStudy.UserMicroservice.entity.TrainDetails;
+import caseStudy.UserMicroservice.models.TrainDetails;
+import caseStudy.UserMicroservice.repo.FareRepository;
 import caseStudy.UserMicroservice.service.AdminServiceImpl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

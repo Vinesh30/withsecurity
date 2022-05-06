@@ -9,11 +9,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.google.common.collect.Lists;
-import caseStudy.paymentMicroService.dao.UserPaymentRepository;
-import caseStudy.paymentMicroService.dao.UserRepository;
-import caseStudy.paymentMicroService.entity.PaymentDetails;
-import caseStudy.paymentMicroService.entity.UserDetails;
+
 import caseStudy.paymentMicroService.exception.ResourceNotFoundException;
+import caseStudy.paymentMicroService.models.PaymentDetails;
+import caseStudy.paymentMicroService.models.UserDetails;
+import caseStudy.paymentMicroService.repo.UserPaymentRepository;
+import caseStudy.paymentMicroService.repo.UserRepository;
 import it.ozimov.springboot.mail.model.Email;
 import it.ozimov.springboot.mail.model.defaultimpl.DefaultEmail;
 import it.ozimov.springboot.mail.service.EmailService;

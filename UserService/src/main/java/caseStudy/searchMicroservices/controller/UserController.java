@@ -13,13 +13,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-import caseStudy.searchMicroservices.entity.TrainDetails;
-import caseStudy.searchMicroservices.entity.UserDetailsmodel;
+
+import caseStudy.searchMicroservices.models.TrainDetails;
+import caseStudy.searchMicroservices.models.UserDetailsmodel;
 import caseStudy.searchMicroservices.service.UserService;
 import caseStudy.searchMicroservices.service.UserServiceImpl;
 import io.swagger.annotations.ApiOperation;
 
-//@CrossOrigin("*")
+@CrossOrigin("*")
 @Component
 @RestController
 @RequestMapping("/user")
@@ -62,21 +63,10 @@ public class UserController
 	public TrainDetails[] getTrainDetailsByStartPointAndEndPointAndTrainDate(@PathVariable String startPoint,@PathVariable  String endPoint,@PathVariable String trainDate)
 	{
 
-		TrainDetails[] response=restTemplate.getForObject("http://localhost:8081/admin/Access/findBy/"+startPoint +"/"+endPoint+"/"+trainDate,TrainDetails[].class);
+		TrainDetails[] response=restTemplate.getForObject("http://AdminService/admin/findBy/"+startPoint +"/"+endPoint+"/"+trainDate,TrainDetails[].class);
 		return response;
 		
 	}
-	// This method add the user details
-		@PostMapping("/signup")
-		@ApiOperation(value = "To Add user Details") 
-		public String saveUser(@RequestBody UserDetailsmodel userDetails) {
-			try {
-				this.userService.addUser(userDetails);
-				return "user Login Successfully ";
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-			return "Operation Failed";
-		}
+	
 
 }

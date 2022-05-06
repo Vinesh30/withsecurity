@@ -1,9 +1,8 @@
 package caseStudy.searchMicroservices.service;
 import java.util.List;
 
-
-import caseStudy.searchMicroservices.entity.TrainDetails;
-import caseStudy.searchMicroservices.entity.UserDetailsmodel;
+import caseStudy.searchMicroservices.models.TrainDetails;
+import caseStudy.searchMicroservices.models.UserDetailsmodel;
 
 public interface UserService 
 {

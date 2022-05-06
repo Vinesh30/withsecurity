@@ -15,8 +15,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import caseStudy.bookingMicroService.dao.UserRepository;
-import caseStudy.bookingMicroService.entity.UserDetails;
+import caseStudy.bookingMicroService.models.UserDetails;
+import caseStudy.bookingMicroService.repo.UserRepository;
 import caseStudy.bookingMicroService.service.UserServiceImpl;
 
 @RunWith(SpringRunner.class)

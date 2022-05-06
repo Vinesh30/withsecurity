@@ -12,3 +12,6 @@
 1651560871341	Rename type 'UserService'
 1651560886534	Rename type 'UserServiceImpl'
 1651561510204	Copy package
+1651632400327	Rename package 'caseStudy.UserMicroservice.dao'
+1651632417261	Rename package 'caseStudy.UserMicroservice.entity'
+1651764527775	Move compilation unit

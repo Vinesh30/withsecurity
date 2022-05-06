@@ -1,6 +1,7 @@
 package caseStudy.checkinMicroService.service;
 import java.util.List;
-import caseStudy.checkinMicroService.entity.CheckinDetails;
+
+import caseStudy.checkinMicroService.models.CheckinDetails;
 
 public interface CheckinService {
 	

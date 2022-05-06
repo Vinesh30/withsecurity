@@ -15,19 +15,22 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
-import caseStudy.UserMicroservice.entity.AdminDetails;
-import caseStudy.UserMicroservice.entity.TrainDetails;
+import caseStudy.UserMicroservice.models.AdminDetails;
+import caseStudy.UserMicroservice.models.TrainDetails;
 import caseStudy.UserMicroservice.service.AdminService;
 import io.swagger.annotations.ApiOperation;
 
-//@CrossOrigin("*") 
+@CrossOrigin("*") 
 @RestController 
-@RequestMapping("/admin/Access") 
+@RequestMapping("/admin") 
 public class AdminController {
 
 	@Autowired
 	private AdminService userService;
+	
+
 
 	// This method finds the all Trains
 	@GetMapping("/findAll") 
@@ -85,16 +88,5 @@ public class AdminController {
 	}
 
 	// This method add the admin details
-	@PostMapping("/signup")
-	@ApiOperation(value = "To Add Admin Details") 
-	public String saveUser(@RequestBody AdminDetails adminDetails) {
-		try {
-			this.userService.addAdmin(adminDetails);
-			return "Admin Login Successfully ";
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return "Operation Failed";
-	}
-
+	
 }

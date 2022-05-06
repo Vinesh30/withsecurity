@@ -11,9 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-import caseStudy.checkinMicroService.entity.CheckinDetails;
-import caseStudy.checkinMicroService.entity.TrainDetails;
-import caseStudy.checkinMicroService.entity.UserDetails;
+
+import caseStudy.checkinMicroService.models.CheckinDetails;
+import caseStudy.checkinMicroService.models.TrainDetails;
+import caseStudy.checkinMicroService.models.UserDetails;
 import caseStudy.checkinMicroService.service.CheckinService;
 import io.swagger.annotations.ApiOperation;
 

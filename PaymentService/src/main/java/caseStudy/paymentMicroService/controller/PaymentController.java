@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import caseStudy.paymentMicroService.entity.PaymentDetails;
+import caseStudy.paymentMicroService.models.PaymentDetails;
 import caseStudy.paymentMicroService.service.PaymentService;
 import io.swagger.annotations.ApiOperation;
 

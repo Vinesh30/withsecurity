@@ -7,13 +7,12 @@ import java.util.Random;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
-import caseStudy.searchMicroservices.dao.AdminRepository;
-import caseStudy.searchMicroservices.dao.UserPaymentRepository;
-import caseStudy.searchMicroservices.dao.UserRepository;
-import caseStudy.searchMicroservices.entity.PaymentDetails;
-import caseStudy.searchMicroservices.entity.TrainDetails;
-import caseStudy.searchMicroservices.entity.UserDetailsmodel;
+import caseStudy.searchMicroservices.models.PaymentDetails;
+import caseStudy.searchMicroservices.models.TrainDetails;
+import caseStudy.searchMicroservices.models.UserDetailsmodel;
+import caseStudy.searchMicroservices.repo.AdminRepository;
+import caseStudy.searchMicroservices.repo.UserPaymentRepository;
+import caseStudy.searchMicroservices.repo.UserRepository;
 
 
 @Service

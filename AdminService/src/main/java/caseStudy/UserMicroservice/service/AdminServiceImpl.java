@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import caseStudy.UserMicroservice.dao.AdminRepository;
-import caseStudy.UserMicroservice.dao.FareRepository;
-import caseStudy.UserMicroservice.entity.AdminDetails;
-import caseStudy.UserMicroservice.entity.TrainDetails;
+import caseStudy.UserMicroservice.models.AdminDetails;
+import caseStudy.UserMicroservice.models.TrainDetails;
+import caseStudy.UserMicroservice.repo.AdminRepository;
+import caseStudy.UserMicroservice.repo.FareRepository;
 
 @Service 
 public class AdminServiceImpl implements AdminService {

@@ -1,6 +1,6 @@
 package caseStudy.bookingMicroService.service; import java.util.List;
 
-import caseStudy.bookingMicroService.entity.UserDetails;
+import caseStudy.bookingMicroService.models.UserDetails;
 
 public interface UserService 
 { 

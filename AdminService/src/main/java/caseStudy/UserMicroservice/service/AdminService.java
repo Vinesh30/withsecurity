@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.springframework.http.ResponseEntity;
 
-import caseStudy.UserMicroservice.entity.AdminDetails;
-import caseStudy.UserMicroservice.entity.TrainDetails;
+import caseStudy.UserMicroservice.models.AdminDetails;
+import caseStudy.UserMicroservice.models.TrainDetails;
 
 
 public interface AdminService 

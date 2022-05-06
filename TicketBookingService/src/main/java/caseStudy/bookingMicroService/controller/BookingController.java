@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import caseStudy.bookingMicroService.entity.TrainDetails;
-import caseStudy.bookingMicroService.entity.UserDetails;
+import caseStudy.bookingMicroService.models.TrainDetails;
+import caseStudy.bookingMicroService.models.UserDetails;
 import caseStudy.bookingMicroService.service.UserService;
 import caseStudy.bookingMicroService.service.UserServiceImpl;
 import io.swagger.annotations.ApiOperation;
@@ -30,6 +30,9 @@ import io.swagger.annotations.ApiOperation;
 public class BookingController {
 	@Autowired
 	private UserService userService;
+	
+	@Autowired
+	private RestTemplate restTemplate;
 
 	// This method find the all userList who booked their trains
 	@GetMapping("/getAll")
@@ -58,7 +61,8 @@ public class BookingController {
 		int noOfChildren = userDetails.getChildren();
 		int totalPassengers = noOfAdults + noOfChildren;
 		String classType = userDetails.getClassType();
-		restTemplate.getForObject("http://localhost:8081/admin/Access/updateSeats/" + trainNo + "/" + totalPassengers,
+		
+		restTemplate.getForObject("http://localhost:8081/admin/updateSeats/" + trainNo + "/" + totalPassengers,
 				TrainDetails.class);
 
 		return userService.addUserBookingDetails(userDetails);

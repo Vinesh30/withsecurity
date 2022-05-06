@@ -24,10 +24,10 @@ import com.google.common.collect.Lists;
 //import it.ozimov.springboot.mail.model.defaultimpl.DefaultEmail;
 //import it.ozimov.springboot.mail.service.EmailService;
 
-import caseStudy.bookingMicroService.dao.UserRepository;
-import caseStudy.bookingMicroService.entity.DatabaseSequence;
-import caseStudy.bookingMicroService.entity.UserDetails;
 import caseStudy.bookingMicroService.exception.ResourceNotFoundException;
+import caseStudy.bookingMicroService.models.DatabaseSequence;
+import caseStudy.bookingMicroService.models.UserDetails;
+import caseStudy.bookingMicroService.repo.UserRepository;
 import it.ozimov.springboot.mail.model.Email;
 import it.ozimov.springboot.mail.model.defaultimpl.DefaultEmail;
 import it.ozimov.springboot.mail.service.EmailService;

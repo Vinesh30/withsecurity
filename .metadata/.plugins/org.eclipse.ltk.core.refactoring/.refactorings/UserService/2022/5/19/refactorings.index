@@ -22,3 +22,6 @@
 1651561974180	Rename type 'SearchController'
 1651564256180	Rename package 'caseStudy.UserMicroservice.SecurityConfig'
 1651564338972	Rename package 'caseStudy.searchMicroservice.SecurityConfig'
+1651632057250	Rename package 'caseStudy.searchMicroservices.dao'
+1651632074042	Rename package 'caseStudy.searchMicroservices.entity'
+1651766330313	Move compilation unit

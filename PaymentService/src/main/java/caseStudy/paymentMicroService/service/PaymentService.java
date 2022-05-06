@@ -1,7 +1,7 @@
 package caseStudy.paymentMicroService.service;
 import java.util.List;
 
-import caseStudy.paymentMicroService.entity.PaymentDetails;
+import caseStudy.paymentMicroService.models.PaymentDetails;
 
 public interface PaymentService 
 {
